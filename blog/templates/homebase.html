@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <title>Document</title>
+
+  <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+}
+
+.about-container{
+     background: #eee4db;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase1 .slideshow:nth-of-type(2) {
+    margin-top: 50px;
+    margin-left: -30px;
+    box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.showcase3 {
+    position: relative;
+    margin-top: -100px;
+}
+
+.showcase3 .slideshow {
+    box-shadow: 0px -7px 20px rgba(0, 0, 0);
+}
+
+.slideshow {
+    width: 200px;
+    height: 250px;
+    position: relative;
+    background-color: #000;
+}
+
+.slideshow-item {
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    animation-name: cycleImages;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+.slideshow-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation-name: zoom;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img {
+    animation-delay: 0s;
+}
+
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img {
+    animation-delay: 12s;
+}
+
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img {
+    animation-delay: 24s;
+}
+
+.slideshow-item:nth-child(4),
+.slideshow-item:nth-child(4) img {
+    animation-delay: 36s;
+}
+
+.slideshow-item:nth-child(5),
+.slideshow-item:nth-child(5) img {
+    animation-delay: 48s;
+}
+
+@keyframes cycleImages {
+    25% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+.about{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 75vh;
+    box-shadow: 0in;
+}
+
+.about p{
+  font-family: "Trirong", serif;font-size: 13px;
+  align-items: right;
+
+}
+.about h3{
+  font-size: 40px;
+  align-items: center;
+  font-family: "Sofia", sans-serif;
+}
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.4);
+    }
+}
+
+@media(max-width: 992px) {
+    .slideshow {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media(max-width: 768px) {
+    .slideshow {
+        width: 200px;
+        height: 150px;
+    }
+    .showcase3 {
+        margin-top: -70px;
+    }
+    .about-container{
+     background: #eee4db;
+      display: inline;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.container {
+    display: inline;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.about{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+}
+
+@media(max-width: 576px) {
+    .slideshow {
+        width: 150px;
+        height: 100px;
+    }
+    .showcase2 {
+        margin-left: -50px;
+    }
+    .showcase3 {
+        margin-top: -50px;
+    }
+    
+
+}
+hr{
+        width: 90%;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        margin: 20px auto;
+    }
+     .head{
+      background-color: #eee4db;
+      text-align: center;
+      font-size: 40px;
+      align-items: center;
+      font-family: "Sofia", sans-serif;
+    }
+  </style>
+</head>
+<body>
+<section id="aboutus" >
+  <h2 class="head">About</h2>
+      
+<div class="about-container">
+  <div class="container">
+    <div class="showcase showcase1">
+      <div class="slideshow">
+        <div class="slideshow-item">
+          <img src="{%static 'images/IMG_8629.jpeg'%}" alt="slide image">
+        </div>
+        <div class="slideshow-item">
+          <img src="{%static 'images/IMG_2944.jpeg'%}" alt="slide image">
+        </div>
+        <div class="slideshow-item">
+          <img src="{%static 'images/IMG-8623.png'%}" alt="slide image">
+        </div>
+        <div class="slideshow-item">
+          <img src="{%static 'images/IMG-8624.JPG'%}" alt="slide image">
+        </div>
+      </div>
+      <div class="slideshow">
+        <div class="slideshow-item">
+          <img src="{%static 'images/IMG-8619.png'%}" alt="slide image">
+        </div>
+        <div class="slideshow-item">
+          <img src="{%static 'images/IMG-8625.JPG'%}" alt="slide image">
+        </div>
+        <div class="slideshow-item">
+          <img src="{%static 'images/IMG-8630.jpg'%}" alt="slide image">
+        </div>
+        <div class="slideshow-item">
+          <img src="{%static 'images/IMG_2938.jpeg'%}" alt="slide image">
+        </div>
+      </div>
+    </div>
+    <div class="showcase showcase3">
+      <div class="slideshow">
+        <div class="slideshow-item">
+          <img src="{%static 'images/IMG_2945.jpeg'%}" alt="slide image">
+        </div>
+        <div class="slideshow-item">
+          <img src="{%static 'images/IMG_2947.jpeg'%}" alt="slide image">
+        </div>
+        <div class="slideshow-item">
+          <img src="{%static 'images/IMG_8632.jpg'%}" alt="slide image">
+        </div>
+        <div class="slideshow-item">
+          <img src="{%static 'images/IMG_8631.jpg'%}" alt="slide image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about">
+    <h3>HI I'm Linda Sanga,</h3>
+    <p> I am a Kenyan currently live in the US. I am a postgrad student with an interest 
+      in fashion, style, travel, photography and a creative in general. This is my little space where I share with 
+      you my world view. Grab a cup of tea, coffee, wine or whatever you like and join me in this journey.  One of the most 
+      interesting things I’ve learnt so far is that we all go through the same experiences just in a different way that influences
+       the way we think and interact with the world. I hope to dive into more of the challenges as well as fun moments I’ve been through so far.
+
+    </p>
+  </div>
+</div>
+</section>
+  
+</body>
+</html>
+{% endblock content %}

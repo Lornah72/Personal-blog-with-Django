@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+    footer{
+        width: 100%;
+        bottom: 0;
+        background: linear-gradient(to right,#a6776a,#ce9c90);
+        color: #333333;
+        padding: 5px 0 1.5px;
+        
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .row{
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .col{
+        text-align: center;
+        flex-basis: 25%;
+        padding: 10px;
+    }
+    
+    ul li{
+        list-style: none;
+        margin-bottom: 12px;
+    }
+    ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .social-icons .fa{
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        color: #000;  
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    hr{
+        width: 90%;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        margin: 20px auto;
+    }
+    .copyright{
+        text-align: center ;
+    }
+    @media(max-width: 768px){
+        footer{
+            width: 100%;
+            height: auto;
+        }
+        .row{
+            display: inline;
+        }
+       }
+       
+</style>    
+</head>
+<body>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h3>CONTACT</h3>
+                <p>+254717566243</p>
+                <p>lynsanga@gmail.com</p>
+            </div>
+            <div class="col">
+                <h3>Follow</h3>
+                <div class="social-icons">
+                <ul>
+                    <a href=""><i  class="fa fa-facebook-official" aria-hidden="true" ></i></a>
+                    <a href="https://www.instagram.com/that_chiq_linda/"><i class="fa fa-instagram" aria-hidden="true" ></i></a>
+                    <a href="https://pin.it/4DF8v01"><i class="fa fa-pinterest" aria-hidden="true" ></i></a>
+                    <a href="https://twitter.com/sangalyn?s=21&t=JmWw7fWR0V5PghQJ0XDlUA"><i class="fa fa-twitter" aria-hidden="true" ></i></a>
+                </ul>
+                </div>
+                </div>
+            <div class="col">
+                <h3>Address</h3>
+                <p>P.O.BOX 134-20100,</p>
+                <p>Nakuru</p>
+
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">lyn Sanga @ 2022 - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+{% endblock content %}

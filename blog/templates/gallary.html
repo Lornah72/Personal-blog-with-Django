@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <title>Document</title>
+    <style>
+       *{
+        margin: 0;
+       }
+       body{
+        color: #333333;  
+        height: 100px;
+        margin-bottom: 0;
+       }
+       #slider{
+        height: 500px;
+        border: 1px solid white;
+        justify-content: center;
+        align-items: center;
+        background-color: #eee4db;
+       }
+       .container{
+        width: 1600px;
+        margin: auto;
+       }
+       .subcontainer{
+        width: 85%;
+        margin: auto;
+       }
+       .controller{
+        display: flex;
+        justify-content: space-between;
+       }
+       
+       #controls i{
+        color: white;
+        font-size: 1rem;
+       }
+       .previous, .next{
+        
+        padding: 2px;
+        width: 30px;
+        cursor: pointer;
+        border-radius: 50%;
+        outline: none;
+        transition: 0.7s ease-in-out;
+        border: 3px solid #eee4db;
+        background-color: #A6776A;
+        box-shadow: 0 0 5px #bbb;
+       }
+       .previous:hover, .next:hover{
+        border: 3px solid gray;
+       }
+       .slide-img{
+        width: 100%;
+        height: 275px;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        border-radius: 5px;
+       }
+       .slide-img:hover{
+        box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9)inset;
+       }
+       
+       @media (max-width:1600px){
+        .container{
+            width: 100%;
+        }
+       }
+       .img-1{
+        background-image: url('{%static "images/IMG_2938.jpeg"%}');
+       }
+       
+       .img-2{
+        background-image: url('{%static "images/IMG_2940.jpeg"%}');
+       }
+       .img-3{
+        background-image: url('{%static "images/IMG_2939.jpeg"%}');
+       }
+       .img-4{
+        background-image: url('{%static "images/IMG_2919.jpeg"%}');
+       }
+       .img-5{
+        background-image: url('{%static "images/IMG_2937.jpeg"%}');
+       }
+       .img-6{
+        background-image: url('{%static "images/IMG_2941.jpeg"%}');
+       }
+       .img-7{
+        background-image: url('{%static "images/IMG_2942.jpeg"%}');
+       }
+       .img-8{
+        background-image: url('{%static "images/IMG_2944.jpeg"%}');
+       }
+       .img-9{
+        background-image: url('{%static "images/IMG_2945.jpeg"%}');
+       }
+       .img-10{
+        background-image: url('{%static "images/IMG_2946.jpeg"%}');
+       }
+       .controller h2{
+        text-align: center ;
+        font-family: "Sofia", sans-serif;
+       }
+    </style>
+    
+</head>
+<body id="gallary">
+   <section id="slider">
+    <div class="container">
+        <div class="subcontainer">
+            <div class="slide-wrapper">
+                <div class="controller">
+                    <div>
+                        <h2>Gallery</h2>
+                    </div>
+                    <div id="controls">
+                        <button class="previous"><i class="fas fa-angle-left"></i></button>
+                        <button class="next"><i class="fas fa-angle-right"></i></button>
+                    </div>
+                </div>
+                <br>
+                <div class="my-slider">
+                <div>
+                    <div class="slide" >
+                        <div class="slide-img img-1">
+                        </div>
+                        <br>        
+                               
+                    </div>
+                </div>
+                <div>
+                    <div class="slide">
+                        <div class="slide-img img-2">
+                          
+                        </div>
+                        <br>        
+                                 
+                    </div>
+                </div>
+                <div>
+                    <div class="slide">
+                        <div class="slide-img img-3">
+                           
+                        </div>
+                        <br>        
+                              
+                    </div>
+                </div>
+                <div>
+                    <div class="slide" >
+                        <div class="slide-img img-4">
+                        </div>
+                        <br>        
+                  
+                    </div>
+                </div>
+                <div>
+                    <div class="slide" >
+                        <div class="slide-img img-5">
+                        </div>
+                        <br>        
+                           
+                    </div>
+                </div>
+                <div>
+                    <div class="slide" >
+                        <div class="slide-img img-6">
+                        </div>
+                        <br>        
+                             
+                    </div>
+                </div>
+                <div>
+                    <div class="slide" >
+                        <div class="slide-img img-7">
+                        </div>
+                        <br>        
+                             
+                    </div>
+                </div>
+                <div>
+                    <div class="slide" >
+                        <div class="slide-img img-8">
+                        </div>
+                        <br>        
+                             
+                    </div>
+                </div>
+                <div>
+                    <div class="slide" >
+                        <div class="slide-img img-9">
+                        </div>
+                        <br>        
+                               
+                    </div>
+                </div>
+                <div>
+                    <div class="slide" >
+                        <div class="slide-img img-10">
+                        </div>
+                        <br>        
+                             
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+   </section>
+   <script>
+    let slider = tns({
+        container : ".my-slider",
+        "slideBy":1,
+        "speed" : 400,
+        "nav" : false,
+        controlsContainer: "#controls",
+        prevButton: ".previous",
+        nextButton : ".next",
+        responsive:{
+            1600:{
+                items:4,
+                gutter: 20
+            },
+            1024:{
+                items: 4,
+                gutter:20
+            },
+            768:{
+                items: 3,
+                gutter:20
+            },
+            480:{
+                items:1
+            }
+        }
+
+    })
+
+   </script>
+  
+</body>
+</html>
+{% endblock content %}

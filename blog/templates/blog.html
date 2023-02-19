@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  
+
+    *{
+      
+      padding: 0;
+      margin: 0;
+      font-family: 'Josefin Sans',sans-serif;
+    }
+    section{
+      background-color: #ce9c90;
+    }
+    .blog1{
+      width: 100%;
+      padding: 78px 0px;
+      
+    }
+    .blog1 img{
+      margin-bottom: -50px;
+      height: auto;
+      width: 350px;
+      box-shadow: -7px;
+    }
+    .blog1-text{
+      width: 550px;
+    }
+    .main{
+      background-color: #ce9c90;
+      width: 1130px;
+      max-width: 95%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .main2{
+      background-color: #e6d0ca;
+      width: 1130px;
+      max-width: 95%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .blog1-text h1{
+      text-align: right;
+      color: #333333;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+    .blog1-text{
+      color: #333333;
+      font-size: 20px;
+      text-transform: capitalize;
+      margin-bottom: 25px;
+      letter-spacing: 2px;
+    }
+    .blog1-text p{
+      color: #333333;
+      text-align: right;
+      letter-spacing: 1px;
+      line-height: 28px;
+      font-size:12px;
+      margin-bottom: 45px;
+    }
+    .blog2{
+      background-color: #e6d0ca;
+      width: 100%;
+      padding: 78px 0px;}
+
+
+    .blog2 img{
+      margin-top: -50px;
+      height: auto;
+      width: 350px;
+      box-shadow: -7px;
+    }  
+
+    .blog2-text h1{
+      text-align: left;
+      color: #333333;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+    .blog2-text{
+      text-align: end;
+      margin-left: 20px;
+      color: #333333;
+      font-size: 20px;
+      text-transform: capitalize;
+      display: inline-block;
+      align-self: flex-end;
+     
+      letter-spacing: 2px;
+    }
+    .blog2-text p{
+      color: #333333;
+      text-align: left;
+      letter-spacing: 1px;
+      line-height: 28px;
+      font-size:12px;
+      margin-bottom: 45px;
+    }
+   
+    hr{
+        width: 90%;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        margin: 20px auto;
+    }
+    .blog1 h2{
+      text-align: center;
+      font-size: 40px;
+      align-items: center;
+      font-family: "Sofia", sans-serif;
+    }
+    .blogimg{
+      margin-top: -50px;
+    }
+   
+@media (max-width:850px) {
+  .blog1{
+      width: 100%;
+      padding: 78px 0px;
+      
+    }
+    .blog1 img{
+      height: auto;
+      width: 100%;
+      box-shadow: -7px;
+      margin-top: -50px;
+      position: relative;
+      top: -100px;
+    }
+    .blog1-text{
+      width: 550px;
+    }
+    .main{
+      background-color: #ce9c90;
+      width: 100%;
+      margin: 0 auto;
+      display: inline;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .main2{
+      background-color: #e6d0ca;
+      width: 100%;
+      max-width: 95%;
+      margin: 0 auto;
+      display: inline;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .blog1-text h1{
+      text-align: center;
+      color: #333333;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+    .blog1-text{
+      height: auto;
+      width: 100%;
+      color: #333333;
+      font-size: 20px;
+      text-transform: capitalize;
+      margin-bottom: 25px;
+      letter-spacing: 2px;
+    }
+    .blog1-text p{
+      color: #333333;
+      text-align: center;
+      letter-spacing: 1px;
+      line-height: 28px;
+      font-size:12px;
+      margin-bottom: 45px;
+    }
+    .blog2{
+      background-color: #e6d0ca;
+      width: 100%;
+      padding: 78px 0px;}
+
+
+    .blog2 img{
+      height: 250px;
+      width: auto;
+      margin-top: 50px;
+      
+    }  
+
+    .blog2-text h1{
+      text-align: center;
+      color: #333333;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+    .blog2-text{
+      text-align: center;
+      margin-left: 20px;
+      color: #333333;
+      font-size: 20px;
+      text-transform: capitalize;
+      display: inline;
+      align-self: flex-end;
+     
+      letter-spacing: 2px;
+    }
+    .blog2-text p{
+      color: #333333;
+      text-align: center;
+      letter-spacing: 1px;
+      line-height: 28px;
+      font-size:12px;
+      margin-bottom: 45px;
+    }
+   
+    hr{
+        width: 90%;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        margin: 20px auto;
+    }
+    .blog1 h2{
+      text-align: center;
+      font-size: 40px;
+      align-items: center;
+      font-family: "Sofia", sans-serif;
+    }
+    .blogimg{
+      margin-top: -50px;
+    }
+}
+    
+   
+    
+  </style>
+</head>
+<body>
+  <div>
+    <section id="blogpage" class="blog1">
+      <h2>BLOG</h2>
+      <hr>
+      <div class="main">
+        <div class="blog1-text">
+          <h1>Travel</h1>
+          <p>
+            As the swahili saying goes kutembea kwingi kuona mengi or as I would translate traveling the world opens up your mindset.
+             Having the opportunity to travel is one of the best gifts you’ll ever give yourself, the interactions with different cultures, 
+             different vibe, different food, other One of the most interesting things I’ve learnt so far is that we all go through the same experiences just in a different way that influences the way we think and interact with the world. 
+             I hope to dive into more of the challenges as well as fun moments I’ve been through so far.
+          </p>
+  
+            <hr>
+        </div>
+        <img src="{%static 'images/IMG_2945.jpeg'%}" alt="">
+      </div>
+      <div class="main2">
+        <img class="blogimg"src="{%static 'images/IMG_8631.jpg'%}" alt="">
+        <div class="blog2-text">
+          <hr>
+          <h1>Fashion</h1>
+          <p>I grew up enjoying putting clothes together and I also watched my mum always slay, never stepping out of the house looking shabby. I think that developed my interest in fashion and my personal style. I did a couple of beauty shows in high school and in uni as well.
+
+         I also learned how to find out what fits me best, with clothes and accessories by experimenting with color, patterns, shapes and materials. I enjoy shopping for unique pieces that are both timeless and trendy.
+            
+           
+            </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div>
+    
+  </div>
+</body>
+</html>
+{% endblock content %}
