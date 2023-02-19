@@ -23,6 +23,10 @@ python manage.py runserver
 ```
 
 # Pages Screenshots
+
+![4DD23218-04EE-44F4-8E8F-F17EC989DFE5](https://user-images.githubusercontent.com/68066226/219980794-f6f3f68f-7024-452f-b488-f220d4068281.jpeg)
+![F43BDAB5-B7F4-4747-AA49-1C8307F4F63D](https://user-images.githubusercontent.com/68066226/219980801-cbc8b78b-1fd2-4329-b601-6f5aca6eb9d0.jpeg)
+
 ![5559478C-01E2-42CD-A023-74A068C12949](https://user-images.githubusercontent.com/68066226/219980231-1e4a7e96-5167-421f-a410-8c693fb90a0f.png)
 
 ![31A39595-80AD-4489-839F-872839692269](https://user-images.githubusercontent.com/68066226/219980236-1f448153-40d9-4b01-aa5a-a641c673d21d.png)
@@ -33,11 +37,3 @@ python manage.py runserver
 ![6A5C6B59-368F-45DB-B031-F6776B426B5A](https://user-images.githubusercontent.com/68066226/219980232-3f158684-dff7-4a47-b2ce-036977a3ae0f.png)
 ![29A0EF75-9CB7-4824-BD0D-E35EE6F97C06](https://user-images.githubusercontent.com/68066226/219980233-c6987095-abd2-4a2d-b1aa-2df10cd507a0.png)
 
-
-
-
-
-
-## License
-
-@LornahSanga
