@@ -5,7 +5,24 @@ I chose to use Django for my personal blog because it offers a range of benefits
 
 Another important benefit of using Django for personal blogs is the built-in security features. With Django's robust security measures, including protection against common web vulnerabilities like SQL injection and cross-site scripting, I can be sure that my sister's blog is better protected from hacking attempts and other malicious attacks.
 
-# PagesScreenshots
+## Installation
+
+If you already have python and pip installed, run the following command [pip](https://pip.pypa.io/en/stable/) to run this repository on your device.
+
+```bash
+venv\Scripts\activate.bat
+```
+```bash
+pip install django
+```
+```bash
+python manage.py createsuperuser
+```
+```bash
+python manage.py runserver
+```
+
+# Pages Screenshots
 ![5559478C-01E2-42CD-A023-74A068C12949](https://user-images.githubusercontent.com/68066226/219980231-1e4a7e96-5167-421f-a410-8c693fb90a0f.png)
 
 ![31A39595-80AD-4489-839F-872839692269](https://user-images.githubusercontent.com/68066226/219980236-1f448153-40d9-4b01-aa5a-a641c673d21d.png)
@@ -18,13 +35,7 @@ Another important benefit of using Django for personal blogs is the built-in sec
 
 
 
-## Installation
 
-If you already have python and pip installed, run the following command [pip](https://pip.pypa.io/en/stable/) to install matplotlib.
-
-```bash
-pip install matplotlib
-```
 
 
 ## License
